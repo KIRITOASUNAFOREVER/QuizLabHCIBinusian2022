@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <title>Kedai Manager</title>
+</head>
+
+<body>
+    <div class="topnav">
+        <a href="index.html"><img src="images/logo.png" alt="" id="tatas"></a>
+        <button class="button button2"> <a href="register.html" style="float: right;">Sign up</a></button>
+        <button class="button button1"><a href="index.html" style="float: right;"><img src="images/home.png" alt="" id="tatasHomes"></a></button>
+
+    </div>
+    <!-- ================================================================ -->
+    <form action="index.html">
+        <div class="container">
+            <h1>Register</h1>
+            <p>Please fill in this form to create an account.</p>
+            <hr>
+
+            <label for="name"><b>Store Name</b></label>
+            <input type="text" placeholder="Enter Store Name" name="name" id="name" required>
+
+            <label for="email"><b>Email</b></label> <br>
+            <input type="email" placeholder="Enter Email" name="email" id="email" required>
+
+            <br><br>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+
+            <label for="type"><b>Business Type</b></label>
+            <select required>
+                <option>F & B Business</option>
+                <option>Service Business</option>
+                <option>Retail Business</option>
+            </select>
+
+            <br><br>
+            
+            <label for="Location"><b>Store Location</b></label>
+            <input type="text" placeholder="Enter Store Location" name="Location" id="Location" required>
+
+            <label for="Description"><b>Store Description</b></label> 
+            <br> <br>
+            <textarea cols="217" rows="5" required></textarea> <br><br>
+            <hr>
+            <button type="submit" class="registerbtn">Register</button>
+        </div>
+    </form>
+    <!-- ================================================================ -->
+    <footer>
+        <div class="textFooter">
+            <h2>Kedai Manager. Easily manage your business.</h2>
+        </div>
+        <div id="rightFooter">
+            <h2 id="textFooter">Find us</h2>
+            <a href="https://www.facebook.com/" style="float: right;"><img src="images/fb.png" alt="" id=""></a>
+            <a href="https://www.youtube.com/"><img src="images/yt.png" alt="" id=""></a>
+            <a href="https://www.instagram.com/"><img src="images/ig.png" alt="" id=""></a>
+
+        </div>
+    </footer>
+</body>
+
+</html>
