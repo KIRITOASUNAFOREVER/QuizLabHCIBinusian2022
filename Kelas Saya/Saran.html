@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Saran</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.menu {
+  float: align center;
+}
+.menu ul {
+  list-style: none;
+  margin: 8px;
+  padding: 0
+}
+.menu li {
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.menu a {
+  color: orange;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Lato';
+}
+.menu a:hover {
+  
+}
+
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+.header {
+position: relative;
+  padding: 1px;
+  text-align: center;
+  background: #006A4E;
+}
+
+.footer {
+float: left;
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   font-weight: bold;
+   font-family: Arial;
+   width: 100%;
+   background-color: #006A4E;
+   color: orange;
+   text-align: left;
+   padding-left: 50px;
+}
+.icon { 
+position: fixed;
+}
+
+fieldset {
+	border: 10px solid #006A4E;
+  font-size:12px;
+  width: 500px; 
+  margin:  100px auto;
+  height: 50%;
+  }
+</style>
+</head>
+<body>
+<script>
+function formSubmit() {
+    document.forms["myForm"].submit();
+}
+</script>
+<div class="header">
+  <img src="Assets/blytzmegaplex.png" alt="blytzmegaplex" style="width:300px;height:100px;">
+  <div class="menu">
+      <ul>
+       <li><a href="HalamanUtama.html">Halaman Utama</a>
+       <li><a href="Saran.html">Saran</a>
+      </ul>
+    </div>
+  
+</div>
+  <div class="footer">
+  <p>&copy; 2019 Bluejack Co.</p>
+  <div class ="icon">
+		<a href="https://www.instagram.com/cgv.id/" target="_blank">
+  <img src="instagram.png" alt="my picture" height="25" width="25" />
+</a>
+ <a href="https://twitter.com/cgv_id" target="_blank">
+  <img src="twitter.png" alt="my picture" height="25" width="25" />
+</a>
+<a href="https://web.facebook.com/CGV.ID/"target="_blank">
+  <img src="HasilSlicing-[EDWARD]-[2201741971]_36.jpg"   alt="my picture" height="25" width="25" />
+</a>
+  </div>
+  
+</div>
+  <form name="myForm" align = center action="/action_page.php" method="get">
+  <fieldset>
+  <label for="name">Nama:   </label>
+  <input type="text" id="name" name="name" required><br><br>
+  <label for="email">Email:  </label>
+  <input type="text" id="email" name="email"  required><br><br>
+  <label for="gender">Jenis Kelamin:</label>
+  <input type="radio" id="Gender" name="gender" value="male">Laki-Laki
+  <input type="radio" id="Gender" name="gender" value="female">Perempuan<br><br>
+  <label for="w3mission">Saran:</label>
+
+<textarea id="w3mission" rows="4" cols="50" required>
+</textarea><br><br>
+<label for="copy">Sent Copy of your FeedBack???:</label>
+  <input type="radio" id="Copy" name="copy" value="yes">Yes
+  <input type="radio" id="Copy" name="copy" value="no">No<br><br>
+<input type="submit"onclick="alert('FeedBack sudah terkirim!')"></button>
+</fieldset>
+</form>
+	
+
+
+
+</body>
+</html>
